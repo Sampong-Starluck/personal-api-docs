@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   colorMode: { classSuffix: '' },
   runtimeConfig: {
     public: {
-      apiBaseUrl: 'https://api-asb.finig.asia',
+      apiBaseUrl: 'https://petstore.swagger.io',
     },
   },
 })
