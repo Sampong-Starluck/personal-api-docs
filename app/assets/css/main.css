@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+    --color-method-get: oklch(0.6 0.2 220);
+    --color-method-post: oklch(0.6 0.2 155);
+    --color-method-put: oklch(0.65 0.2 75);
+    --color-method-delete: oklch(0.6 0.22 25);
+    --color-method-patch: oklch(0.65 0.2 50);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sidebar scrollbar */
+.sidebar-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-gray-300) transparent;
+}
+.dark .sidebar-scroll {
+    scrollbar-color: var(--color-gray-700) transparent;
+}
